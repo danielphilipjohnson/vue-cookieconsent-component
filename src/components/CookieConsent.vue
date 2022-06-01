@@ -142,3 +142,14 @@
     }
   }
 </script>
+
+<style>
+.cookie-consent-transition-leave-to {
+    transform: translateY(100%);
+  }
+.cookie-consent-transition-leave-active {
+    transition: transform .75s;
+    transition-timing-function: cubic-bezier(.75,0,0,1);
+  }
+
+</style>
