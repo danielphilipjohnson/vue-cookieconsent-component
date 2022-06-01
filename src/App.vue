@@ -82,17 +82,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-  /*
-    CookieConsent
-  */
-  @import "scss/cookie-consent";
-  @import "scss/cookie-consent-bottom";
-  @import "scss/cookie-consent-transition";
-
-  /*
-    Bootstrap
-  */
-  @import "~bootstrap/scss/bootstrap";
-</style>
