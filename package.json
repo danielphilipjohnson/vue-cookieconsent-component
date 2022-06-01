@@ -32,9 +32,10 @@
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit",
+    "lint": "eslint --fix \".js,.vue\" --ignore-path .gitignore .",
     "build": "node build/build.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier":"prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "vue": "^2.5.2"
@@ -106,6 +107,7 @@
     "not ie <= 8"
   ],
   "lint-staged": {
-    "*.{js,vue}": "eslint --cache --fix"
+    "*.{js,vue}": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
